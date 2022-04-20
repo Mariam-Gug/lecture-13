@@ -26,7 +26,7 @@ while (y < catNames.length){
     y++;
 }
 
-// დავალება მესამე
+// მესამე დავალება
 
 let numbers = [5, 6, 10, 25, 3, 7, 4, 100, 28, 36, 89];
 
@@ -51,4 +51,33 @@ if (user.age < 18 && user.studentstatus == 'active') {
     console.log('Hello World')
 } else {
     console.log('error')
+}
+
+// მეხუთე დავალება
+let array1 = [ 'watermelon', 'pear', 10, 45, 50, 'apple', 'ananas' ] ;
+
+for (let i of array1) {
+    if(typeof i == 'string') {
+        console.log(i)
+    }
+}
+
+// მეექვსე დავალება
+let array2 = [ [2, -3, 5, 10], [25, -24, -11, 100] , [-6, -7, 10] ]
+
+for (let i = 0; i < array2.length; i++) {
+    for (let j = 0; j < array2[i].length; j++) {
+        if (array2[i][j] > 0) {
+            console.log(array2[i][j])
+        }
+    }
+}
+
+// მეშვიდე დავალება
+let array3 = [32, 10, 'hello', null, 'hello2', 50 ]
+
+for (let i of array3) {
+    if(typeof i == 'number' && i % 5 == 0) {
+        console.log(i)
+    }
 }
