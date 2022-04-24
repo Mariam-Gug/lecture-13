@@ -1,5 +1,6 @@
 
 // პირველი დავალება
+
 let  user1 = {
     firstname: 'giorgi',
     lastname: 'smith',
@@ -10,6 +11,7 @@ let  user1 = {
   console.log(user1.studentstatus);
 
 //   მეორე დავალება
+
 let catNames = ['Snowball', 'Fluffy', 'Luna']
 
 for (let x = 0; x < catNames.length; x++) {
@@ -37,6 +39,7 @@ for (let x = 0; x < numbers.length; x++) {
 }
 
 // მეოთხე დავალება
+
 let user = {
 	name: 'giorgi',
 	age:  20,
@@ -54,6 +57,7 @@ if (user.age < 18 && user.studentstatus == 'active') {
 }
 
 // მეხუთე დავალება
+
 let array1 = [ 'watermelon', 'pear', 10, 45, 50, 'apple', 'ananas' ] ;
 
 for (let i of array1) {
@@ -63,6 +67,7 @@ for (let i of array1) {
 }
 
 // მეექვსე დავალება
+
 let array2 = [ [2, -3, 5, 10], [25, -24, -11, 100] , [-6, -7, 10] ]
 
 for (let i = 0; i < array2.length; i++) {
@@ -74,6 +79,7 @@ for (let i = 0; i < array2.length; i++) {
 }
 
 // მეშვიდე დავალება
+
 let array3 = [32, 10, 'hello', null, 'hello2', 50 ]
 
 for (let i of array3) {
@@ -81,3 +87,59 @@ for (let i of array3) {
         console.log(i)
     }
 }
+
+// დავალება ფუნქციებზე
+// პირველი დავალება
+
+function sum() {
+    let x = [2, -9, 5, 11, -30, 100, -8, -11, -4, 5, -6, 8];
+    let sum = 0;
+    for (let i = 0; i < x.length; i++) {
+        if (x[i] > 0) {
+            sum += x[i];
+        }
+    }
+    return sum
+}
+
+console.log(sum());
+
+// მეორე დავალება
+
+function sumNum() {
+    let x = [10, 50, 6, 7, 8, 11, 6, 3, 9];
+    let sum = 0;
+    for (let i = 0; i < x.length; i++) {
+        sum += x[i];
+    }
+    return sum
+}
+
+console.log(sumNum());
+
+// მესამე დავალება
+
+let user2 = {
+    firstname: 'giorgi',
+    lastname: 'saakadze',
+    age: 32,
+    isloggedin: true
+  }
+
+
+function userInfo() {
+    if (user2.isloggedin == true) {
+        return user2.firstname + ' ' + user2.lastname
+    };
+    return false;
+}
+
+console.log(userInfo());
+
+// მეოთხე დავალება
+
+function maxNum(...nums) {
+    return Math.max(...nums)
+}
+
+console.log(maxNum(1, 4, 6, 21, 5));
