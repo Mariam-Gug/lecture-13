@@ -91,31 +91,31 @@ for (let i of array3) {
 // დავალება ფუნქციებზე
 // პირველი დავალება
 
-function sum() {
-    let x = [2, -9, 5, 11, -30, 100, -8, -11, -4, 5, -6, 8];
+function sum(...nums) {
     let sum = 0;
-    for (let i = 0; i < x.length; i++) {
-        if (x[i] > 0) {
-            sum += x[i];
+    for (let i = 0; i < nums.length; i++) {
+        if (nums[i] > 0) {
+            sum += nums[i];
         }
     }
     return sum
 }
 
-console.log(sum());
+console.log(sum(2, -9, 5, 11, -30, 100, -8, -11, -4, 5, -6, 8));
+
 
 // მეორე დავალება
 
-function sumNum() {
-    let x = [10, 50, 6, 7, 8, 11, 6, 3, 9];
+function sumNum(...nums) {
     let sum = 0;
-    for (let i = 0; i < x.length; i++) {
-        sum += x[i];
+    for (let i = 0; i < nums.length; i++) {
+        sum += nums[i];
     }
     return sum
 }
 
-console.log(sumNum());
+console.log(sumNum(10, 50, 6, 7, 8, 11, 6, 3, 9));
+
 
 // მესამე დავალება
 
